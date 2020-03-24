@@ -34,6 +34,8 @@ class MusicLibraryController
   def list_artists
     Artist.all.sort_by(&:name).each.with_index(1) do |artist_obj, idx|
       puts "#{idx}. #{artist_obj.artist.name}"
+    end
+  end
 end
 
   #   case input
