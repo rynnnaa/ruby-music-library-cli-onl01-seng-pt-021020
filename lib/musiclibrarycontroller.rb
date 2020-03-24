@@ -62,6 +62,8 @@ class MusicLibraryController
   
   def play_song
     puts "Which song would you like to play?"
+    input = gets
+    input
   end
   end
 end
