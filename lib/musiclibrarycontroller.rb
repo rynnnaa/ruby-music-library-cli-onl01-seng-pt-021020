@@ -65,6 +65,4 @@ class MusicLibraryController
     input = gets
     input
   end
-  end
-  end
 end
