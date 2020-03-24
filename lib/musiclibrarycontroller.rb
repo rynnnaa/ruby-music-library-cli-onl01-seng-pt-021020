@@ -65,8 +65,7 @@ class MusicLibraryController
     input = gets.chomp.to_i
     if(1..Song.all.length).include?(input)
       song= Song.all.sort_by(&:name)[input-1]
-      puts "Playing #"
-
-    if input = "plays"
+      puts "Playing #{song.name} by #{song.artist.name}"
+    end
   end
 end
