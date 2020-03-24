@@ -38,10 +38,7 @@ class MusicLibraryController
      when "play song"
        play_song
      end
-
-    if input != "exit"
-      call
-    end
+   end
 
   def list_songs
     Song.all.sort_by(&:name).each.with_index(1) do |song_obj, idx|
