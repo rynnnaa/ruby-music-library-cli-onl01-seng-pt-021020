@@ -15,7 +15,7 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
     
-    input = gets.chomp
+    input = gets
     
     if input != "exit"
       call
@@ -53,5 +53,6 @@ class MusicLibraryController
   def list_songs_by_genre
     puts "Please enter the name of a genre:"
     input = gets
+    
   end
 end
