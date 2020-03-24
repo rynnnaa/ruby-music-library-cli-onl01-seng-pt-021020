@@ -23,6 +23,8 @@ class MusicLibraryController
     if input != "exit"
       call
     end
+  end
+end
 
   #   case input
   #   when "list songs"
@@ -44,4 +46,3 @@ class MusicLibraryController
   #   Song.all.sort_by(&:name).each.with_index(1) do |song_obj, idx|
   #     puts "#{idx}. #{song_obj.artist.name} - #{song_obj.name} - #{song_obj.genre.name}"
   #   end
-  end
