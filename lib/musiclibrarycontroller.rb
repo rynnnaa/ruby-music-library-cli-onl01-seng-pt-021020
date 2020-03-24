@@ -30,6 +30,9 @@ class MusicLibraryController
       puts "#{idx}. #{song_obj.artist.name} - #{song_obj.name} - #{song_obj.genre.name}"
     end
   end
+  
+  def list_artists
+    Song.all.sort_by(&:name).each.with_index(1) do |song
 end
 
   #   case input
