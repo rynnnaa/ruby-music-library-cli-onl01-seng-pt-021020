@@ -42,6 +42,10 @@ class MusicLibraryController
       puts "#{idx}. #{genre_obj.name}"
     end
   end
+  
+  def list_songs_by_artist
+    input
+  end
 end
 
   #   case input
