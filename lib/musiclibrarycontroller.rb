@@ -44,7 +44,7 @@ class MusicLibraryController
   end
   
   def list_songs_by_artist
-    input
+    puts "Please enter your artist"
   end
 end
 
