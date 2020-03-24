@@ -36,6 +36,12 @@ class MusicLibraryController
       puts "#{idx}. #{artist_obj.name}"
     end
   end
+  
+  def list_genres
+    Genres.all.sort_by(&:name).each.withindex(1) do |genre_obj, idx|
+      puts "#{idx}. #{genre_obj.name}"
+    end
+  end
 end
 
   #   case input
